@@ -70,8 +70,8 @@ const PrimaryButton = ({ children, onClick, className = "", href }: { children: 
 const Footer = () => (
   <footer className="py-12 border-t border-slate-200/60 bg-white/30 backdrop-blur-md">
     <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-      <div className="font-display font-bold text-xl tracking-tighter text-slate-900">
-        REVENUE<span className="text-indigo-600">LEAK</span>
+      <div className="font-display font-bold text-xl tracking-tighter text-slate-900 uppercase">
+        ZERO<span className="text-indigo-600">CLICK</span>
       </div>
       <div className="flex flex-col items-center md:items-end gap-2">
         <p className="text-slate-500 font-medium">Have questions?</p>
@@ -152,8 +152,8 @@ export default function App() {
 
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 p-6 flex justify-between items-center backdrop-blur-md bg-white/30 border-b border-white/50">
-        <div className="font-display font-bold text-xl tracking-tighter text-slate-900">
-          REVENUE<span className="text-indigo-600">LEAK</span>
+        <div className="font-display font-bold text-xl tracking-tighter text-slate-900 uppercase">
+          ZERO<span className="text-indigo-600">CLICK</span>
         </div>
         <button
           onClick={() => setIsModalOpen(true)}
@@ -178,7 +178,7 @@ export default function App() {
             <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-[0.9] mb-6 text-slate-900">
               Your Website <br className="hidden md:block" />
               <span className="text-slate-400">Isn't Broken.</span><br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-cyan-500">It's Leaking Revenue.</span>
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-cyan-500">It's a ZeroClick Waste.</span>
             </h1>
           </FadeIn>
 
@@ -188,7 +188,7 @@ export default function App() {
 
           <FadeIn delay={0.3} className="flex flex-col items-center gap-4">
             <PrimaryButton onClick={() => setIsModalOpen(true)} className="text-lg">
-              Apply for the Revenue Leak Audit <ArrowRight className="w-5 h-5" />
+              Apply for ZeroClick Analysis <ArrowRight className="w-5 h-5" />
             </PrimaryButton>
             <p className="text-sm text-slate-500 font-mono uppercase tracking-widest font-semibold mt-2">Limited audits accepted each month.</p>
           </FadeIn>
@@ -465,10 +465,10 @@ export default function App() {
         <section className="py-32 text-center relative">
           <FadeIn>
             <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-6 text-slate-900">
-              If Your Website Isn't Compounding Revenue…<br />
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-cyan-500">It's Leaking It.</span>
+              Stop the Waste. <br />
+              <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-cyan-500">Unlock ZeroClick Potential.</span>
             </h2>
-            <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">Apply for a Website Revenue Leak Audit. We only accept a limited number each month to protect quality.</p>
+            <p className="text-xl text-slate-600 mb-12 max-w-2xl mx-auto">Apply for a ZeroClick Audit. We only accept a limited number each month to protect quality.</p>
 
             <PrimaryButton onClick={() => setIsModalOpen(true)} className="text-xl px-12 py-6">
               Apply for the Audit
@@ -505,7 +505,7 @@ export default function App() {
               </button>
 
               <div className="p-8 md:p-12">
-                <h2 className="text-3xl font-bold mb-2 text-slate-900 font-display">Apply for a Revenue Leak Audit</h2>
+                <h2 className="text-3xl font-bold mb-2 text-slate-900 font-display">Apply for your ZeroClick Analysis</h2>
                 <p className="text-slate-500 mb-8">Fill out the details below to see if you qualify.</p>
 
                 <form
@@ -517,8 +517,8 @@ export default function App() {
                     try {
                       const formDataToSend = new FormData();
                       formDataToSend.append("access_key", "c36aa52e-fad4-4bd2-861d-81dd491b1d0b"); // User needs to replace this
-                      formDataToSend.append("subject", `New Revenue Leak Audit Application - ${formData.fullName} (${formData.company})`);
-                      formDataToSend.append("from_name", "Markethunterz Audit Bot");
+                      formDataToSend.append("subject", `New ZeroClick Application - ${formData.fullName} (${formData.company})`);
+                      formDataToSend.append("from_name", "ZeroClick Audit Bot");
 
                       Object.entries(formData).forEach(([key, value]) => {
                         formDataToSend.append(key, value as string);
